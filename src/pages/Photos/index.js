@@ -54,7 +54,6 @@ export default function Photos({ match }) {
       setIsLoading(false);
     } catch (err) {
       setIsLoading(false);
-      console.error('Erro no envio da foto:', err);
       const status = get(err, 'response.status', '');
       toast.error('Error uploading photo');
 
